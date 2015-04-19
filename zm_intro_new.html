@@ -17,10 +17,41 @@ x.style.width="300px";
 }
 
 </script>
-
+<script type="text/javascript">  
+    function startmarquee(lh, speed, delay) {  
+        var t;  
+        var oHeight = 300;/** div的高度 **/　  
+        var p = false;  
+        var o = document.getElementById("comment_area");  
+        var preTop = 0;  
+        o.scrollTop = 0;  
+        function start() {  
+            t = setInterval(scrolling, speed);  
+            o.scrollTop += 1;  
+        }  
+        function scrolling() {  
+            if (o.scrollTop % lh != 0  
+                    && o.scrollTop % (o.scrollHeight - oHeight - 1) != 0) {  
+                preTop = o.scrollTop;  
+                o.scrollTop += 1;  
+                if (preTop >= o.scrollHeight || preTop == o.scrollTop) {  
+                    o.scrollTop = 0;  
+                }  
+            } else {  
+                clearInterval(t);  
+                setTimeout(start, delay);  
+            }  
+        }  
+        setTimeout(start, delay);  
+    }  
+    window.onload=function(){  
+        /**startmarquee(一次滚动高度,速度,停留时间);**/　　  
+        startmarquee(20, 20, 1500);  
+    }  
+  
+</script>  
 
 <style type="text/css">
-img, object { max-width: 100%;}
 #title
 {
 height:10%;
@@ -31,25 +62,23 @@ text-align:center;
 }
 #title_content 
 {
-max-width:30%;
+width:30%;
 background:url(images/5.jpg); 
 }
 #vertical_space
 {
 height:10%;
-min-height:10%;
 width:100%
 }
 #container
 {
 height:80%;
 width:100%;
-min-height:80%;
 }
 #type
 {
 width:10%;
-max-height:80%;
+height:100%;
 position:relative;
 margin-left:0%;
 float:left;
@@ -57,7 +86,7 @@ float:left;
 #content
 {
 width:80%;
-max-height:80%;
+height:100%;
 position:relative;
 float:left;
 }
@@ -124,8 +153,8 @@ float:left;
 		<div id="comments">
 			<a name="comment"></a>
 			<h2 style="color:#FF99CC">商品コメント</h2>
-			<div id="comment_area">
-				<div style="position:relative; margin:0 0 0 0; height:300px; overflow:auto">
+			<div id="comment_area"  style="position:relative; margin:0 0 0 0; height:300px; overflow:auto">
+				
 				<table width="70%" border="1" style=" text-align:center">
 				<tr>
 					<td>父</td>
@@ -170,7 +199,7 @@ float:left;
 				</table>
 
 
-				</div>
+				
 			</div>
 		</div>
 	</div>
