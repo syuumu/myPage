@@ -18,41 +18,55 @@
 <body >
 <div data-role="page" data-theme="c" id="pageone">
   <div data-role="header" data-theme="b" data-position="inline">
-  <h1>Welcome to Syuumu's Page</h1>
+  <h1>Syuumuの紹介ページ</h1>
   <!--<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">戻る</a>-->
   <div data-role="navbar" >
       <ul>
-          <li style="width:70%;"><a href="http://www.felissimo.co.jp/" data-transition="fade" >FELISSIMO SHOPPING</a></li>
+          <li style="width:70%;"><a href="http://www.felissimo.co.jp/" data-transition="fade" >フェリシモ</a></li>
           <li style="width:15%;"><a href="#buy" data-rel="dialog">注文</a></li>
           <li style="width:15%;"><a href="#search" data-rel="dialog">検索</a></li>
       </ul>
       </div>
   </div>
 
-  <div data-role="content">
-  	<div data-role="controlgroup" data-type="horizontal" align="center">
-        <a href="#" data-role="button" style="border-color:#6FC; background-color:transparent"><font color="#00FFFF">menu</font></a>
-        <a href="#self_intro" data-role="button"  data-inline="true" style="border-color:#6FC;">商品紹介</a>
-        <a href="#photos" data-role="button" data-inline="true" style="border-color:#6FC;">商品写真</a>
-        <a href="#comment" data-role="button" data-inline="true" style="border-color:#6FC;">商品コメント</a>
-    
+  <div data-role="content" data-type="vertical">
+  
+  	<div data-role="controlgroup" data-type="horizontal"  align="center">
+        <a href="#" data-role="button" style="border-color:#6FC; background-color:transparent;">menu
+        </a>
+        <a href="#self_intro" data-role="button"   style="border-color:#6FC;">紹介
+        </a>
+        <a href="#photos" data-role="button"  style="border-color:#6FC;">写真
+        </a>
+        <a href="#comment" data-role="button"  style="border-color:#6FC;">コメント
+        </a>
     </div>
+    <!--
+    <div data-role="controlgroup" data-type="horizontal" align="center">
+    <p>水平分组：</p>
+    <a href="#" data-role="button" style="border-color:#6FC; background-color:transparent;">menu</a>
+    <a href="#" data-role="button" style="border-color:#6FC;">紹介</a>
+    <a href="#" data-role="button" style="border-color:#6FC;">写真</a>
+<a href="#" data-role="button" style="border-color:#6FC;">コメント</a>
+</div>
+-->
     <!--
       <p>欢迎！</p>
       <a href="#pagetwo" data-rel="dialog">转到页面二</a>
       -->
+      <p></p>
      <div >
      	<a name="self_intro"/>
-     	<p style="animation:linear; background-color:#C99"><font face="cursive,Comic Sans MS">商品紹介</p>
+     	<p style="animation:linear; background-color:#C99; "><font face="cursive,Comic Sans MS">商品紹介</p>
         <p>自己紹介させていただきます</p>
      </div>
      	
      <div>
      	<a name="photos"/>
-     	<p style="animation:linear; background-color:#C99"><font face="cursive,Comic Sans MS">商品写真</p>
+     	<p style="animation:linear; background-color:#C99;"><font face="cursive,Comic Sans MS">商品写真</p>
      </div>
     	 <a name="comment"/>
-     	<p style="animation:linear; background-color:#C99"><font face="cursive,Comic Sans MS">商品コメント</p>
+     	<p style="animation:linear; background-color:#C99;"><font face="cursive,Comic Sans MS">商品コメント</p>
         
         
      <div>
