@@ -10,19 +10,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=0.5, maximum-scale=2.0"/> 
 <!--<meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport"/> -->
 <title>Syuumuの紹介ページ</title>
-
+<style>
+.ui-navbar-new
+{
+	background-image:url(images/5.jpg);
+}
+</style>
 </head>
 
 <body >
 <div data-role="page" data-theme="c" id="pageone">
-  <div data-role="header" data-theme="b" data-position="fixed" data-fullscreen="true">
-    <h1>Welcome to Syuumu's Page</h1>
-    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">戻る</a>
+  <div data-role="header" data-theme="b" data-position="inline">
+  <h1>Welcome to Syuumu's Page</h1>
+  <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">戻る</a>
+  <div data-role="navbar" class="ui-navbar-new">
+      <ul>
+          <li style="width:70%;"><a href="http://www.felissimo.co.jp/" data-transition="fade" >FELISSIMO SHOPPING</a></li>
+          <li style="width:15%;"><a href="#buy" data-rel="dialog">注文</a></li>
+          <li style="width:15%;"><a href="#search" data-rel="dialog">検索</a></li>
+      </ul>
+      </div>
   </div>
 
   <div data-role="content">
-    <p>欢迎！</p>
-    <a href="#pagetwo" data-rel="dialog">转到页面二</a>
+      <p>欢迎！</p>
+      <a href="#pagetwo" data-rel="dialog">转到页面二</a>
   </div>
 
   <div data-role="footer">
@@ -44,5 +56,36 @@
   <h1>页脚文本</h1>
   </div>
 </div> 
+
+<div data-role="page" id="buy">
+  <div data-role="header">
+    <h1>注文について</h1>
+  </div>
+
+  <div data-role="content">
+    <p>何も選択されていない状態で、注文できません</p>
+    <a href="#pageone">戻る</a>
+  </div>
+
+  <div data-role="footer" data-theme="b" data-position="fixed" data-fullscreen="true">
+  <h1>申し訳ございません</h1>
+ </div>
+  </div>
+  
+<div data-role="page" id="search">
+  <div data-role="header">
+    <h1>検索</h1>
+  </div>
+
+  <div data-role="content">
+    <p>機能は完成していないので、web上で「ctrl+F」で検索してください。</p>
+    <a href="#pageone">戻る</a>
+  </div>
+
+  <div data-role="footer" data-theme="b" data-position="fixed" data-fullscreen="true">
+  <h1>申し訳ございません</h1>
+</div>
+</div>
+ 
 </body>
 </html>
