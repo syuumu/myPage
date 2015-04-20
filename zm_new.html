@@ -7,14 +7,11 @@
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=0.5, maximum-scale=2.0"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/> 
 <!--<meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport"/> -->
 <title>Syuumuの紹介ページ</title>
 <style>
-.ui-navbar-new
-{
-background-color:#CCCC66;
-}
+
 </style>
 </head>
 
@@ -23,7 +20,7 @@ background-color:#CCCC66;
   <div data-role="header" data-theme="b" data-position="inline">
   <h1>Welcome to Syuumu's Page</h1>
   <!--<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">戻る</a>-->
-  <div data-role="navbar" class="ui-navbar-new">
+  <div data-role="navbar" >
       <ul>
           <li style="width:70%;"><a href="http://www.felissimo.co.jp/" data-transition="fade" >FELISSIMO SHOPPING</a></li>
           <li style="width:15%;"><a href="#buy" data-rel="dialog">注文</a></li>
@@ -35,9 +32,9 @@ background-color:#CCCC66;
   <div data-role="content">
   	<div data-role="controlgroup" data-type="horizontal" align="center">
         <a href="#" data-role="button" style="border-color:#6FC; background-color:transparent"><font color="#00FFFF">menu</font></a>
-        <a href="#self_intro" data-role="button" style="border-color:#6FC;">商品紹介</a>
-        <a href="#photos" data-role="button" style="border-color:#6FC;">商品写真</a>
-        <a href="#comment" data-role="button" style="border-color:#6FC;">商品コメント</a>
+        <a href="#self_intro" data-role="button"  data-inline="true" style="border-color:#6FC;">商品紹介</a>
+        <a href="#photos" data-role="button" data-inline="true" style="border-color:#6FC;">商品写真</a>
+        <a href="#comment" data-role="button" data-inline="true" style="border-color:#6FC;">商品コメント</a>
     
     </div>
     <!--
