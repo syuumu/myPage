@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/> -->
-<meta content="width=device-width,user-scalable=no" name="viewport"/> 
+<meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport"/> 
 <title>Syuumuの紹介ページ</title>
 <script>
 function bigImg(x)
@@ -54,6 +54,16 @@ x.style.width="300px";
 </script>  
 
 <style type="text/css">
+@media screen and (max-device-width: 600px) {
+　　　　.column {
+　　　　　　float: none;
+　　　　　　width:auto;
+　　　　}
+　　　　#sidebar {
+　　　　　　display:none;
+　　　　}
+　　}
+
 #title
 {
 height:10%;
