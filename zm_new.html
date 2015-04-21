@@ -1,34 +1,97 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!--
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+-->
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/> 
 <!--<meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport"/> -->
-<title>Syuumuの紹介ページ</title>
+<title >Syuumuの紹介ページ</title>
 <style>
 a.tab
 {
 	border-color:#3CF;
-	background-color:#FC9;
+	/*background-color:#FC9;*/
 }
+/*
+#btn-twitter.ui-icon-twitter
+{
+	background:url(images/twitter_circle_color-512.png) no-repeat 0 0;
+	background-size:30px 30px;
+}
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.ui-icon-myapp-email {
+		background-image: url("app-icon-email-highres.png");
+		background-size: 18px 18px;
+	}
+	
+	#btn-facebook.ui-icon-facebook
+	{
+		background:url(images/square-facebook-512.png);
+		background-size:18px 18px;
+		margin-left: 18px;
+	}
+	#btn-twitter.ui-icon-twitter
+	{
+		background:url(images/twitter_circle_color-512.png);
+		background-size:18px 18px;
+	}
+}
+#btn-facebook.ui-icon-facebook
+{
+	background:url(images/square-facebook-512.png) no-repeat;
+	background-size:25px 25px;
+	background-color:rgba(255,255,255,.3);
+	margin-left: 18px;
+	margin-top: 18px;
+}
+#btn-twitter.ui-icon-twitter
+{
+	background:url(images/twitter_circle_color-512.png) no-repeat;
+	background-size:30px 30px;
+}
+/*
+#btn-facebook.ui-icon-facebook
+{
+	background:url(images/square-facebook-512.png) no-repeat 0 0;
+	background-size:20px 20px;
+	margin-left: 18px;
+}
+*/
 </style>
 </head>
 
 <body >
-<div data-role="page" data-theme="c" id="pageone">
-  <div data-role="header" data-theme="c" data-position="inline">
-  <h1>Syuumuの紹介ページ</h1>
+<div data-role="page" data-theme="a" id="pageone">
+  <div data-role="header" data-theme="a" data-position="inline">
+  <p style="font-size:1.0em; width:100%; " align="center">Syuumuの紹介ページ</p>
   <!--<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">戻る</a>-->
-  <div data-role="navbar" >
+  <div data-role="navbar" data-type="horizontal">
       <ul>
-          <li style="width:70%;"><a href="http://www.felissimo.co.jp/" data-transition="fade" >フェリシモ</a></li>
-          <li style="width:15%;"><a href="#buy" data-rel="dialog">注文</a></li>
-          <li style="width:15%;"><a href="#search" data-rel="dialog">検索</a></li>
+          <li style="width:60%;">
+          <a href="http://www.felissimo.co.jp/" data-transition="fade" >
+          <font face="cursive,Comic Sans MS">FELISSIMO SHOPPING
+          </font>
+          </a>
+          </li>
+          <li style="width:20%;">
+          <a href="#buy" data-rel="dialog">注文
+          </a>
+          </li>
+          <li style="width:18.5%;">
+          <a href="#search" data-rel="dialog">検索
+          </a>
+          </li>
       </ul>
       </div>
   </div>
@@ -36,9 +99,9 @@ a.tab
   <div data-role="content" data-type="vertical">
   
   	<div data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
-        <a href="#" data-role="button" style="border-color:#3CF; background-color:transparent; font-family:Verdana, Geneva, sans-serif">menu
+        <a href="#" data-role="button" style="border-color:#3CF; background-color:transparent; font-family:Verdana, Geneva, sans-serif;">menu
         </a>
-        <a href="#self_intro" data-role="button"    class="tab">商品紹介
+        <a href="#self_intro" data-role="button"  class="tab">商品紹介
         </a>
         <a href="#photos" data-role="button" class="tab">商品写真
         </a>
@@ -58,28 +121,51 @@ a.tab
       <p>欢迎！</p>
       <a href="#pagetwo" data-rel="dialog">转到页面二</a>
       -->
-      <p></p>
      <div >
-     	<a name="self_intro"/>
-     	<p style="animation:linear; background-color:#D8C9BC; "><font face="cursive,Comic Sans MS" color="#FFFFFF">商品紹介</font></p>
-        <p>自己紹介させていただきます</p>
+     	<a name="self_intro">
+     	<p style="animation:linear; background-color:#D8C9BC; width:30%; ">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF">
+        <span style="margin-left:5%;">商品紹介
+        </span>
+        </font>
+        </p>
+        </a>
+        <p>&nbsp;&nbsp;私は明確な目標を立て、最後まで諦めない人です。大学時代、日本語を専攻としてゼロから一生懸命勉強してきました。しかし、自分の将来に少しでも役に立つ専攻以外の知識も学びたいです。三年生に入ってから、私は余暇を利用して三ヶ月以内中国会計従業資格証(日商簿記と類似)を目指し独学しました。その時、日本語能力1級試験と会計従業試験の受験日が近くて、みんなは日本語能力試験のために勉強していました。友達から「時間がなくて大変ですね、諦めたほうがいい」と言われても、諦めたくないです。両方の勉強を両立させるために、毎日の時間を合理的に配置し一生懸命勉強しました。やっと二つの試験は一回で合格しました。
+        </p>
      </div>
      	
      <div>
-     	<a name="photos"/>
-     	<p style="animation:linear; background-color:#D8C9BC;"><font face="cursive,Comic Sans MS" color="#FFFFFF">商品写真</font></p>
+     	<a name="photos">
+     	<p style="animation:linear; background-color:#D8C9BC; width:30%; ">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF">
+        <span style="margin-left:5%;">商品写真
+        </span>
+        </font>
+        </p>
+        </a>
+        <p
+        /p>
+        <p>
+        </p>
+        <p>
+        </p>
      </div>
-    	 <a name="comment"/>
-     	<p style="animation:linear; background-color:#D8C9BC;"><font face="cursive,Comic Sans MS" color="#FFFFFF">商品コメント</font></p>
-        
-        
+    	
      <div>
-     
+      <a name="comment">
+     	<p style="animation:linear; background-color:#D8C9BC; width:35%; ">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF">
+        <span style="margin-left:5%;">商品コメント
+        </span>
+        </font>
+        </p>
+        </a>
      </div>
   </div>
 
   <div data-role="footer" data-fullscreen="true" data-position="fixed">
-  <h1>页脚文本</h1>
+  	<a href="#" data-role="button" id="btn-twitter" data-icon="twitter" data-inline="true" style="width:30%;" >Twitter</a>   
+    <a href="#" data-role="button" id="btn-facebook" data-icon="facebook" data-inline="true" style="width:30%;">Facebook</a>
   </div>
 </div> 
 
@@ -119,7 +205,7 @@ a.tab
   </div>
 
   <div data-role="content">
-    <p>機能は完成していないので、web上で「ctrl+F」で検索してください。</p>
+    <p>機能は完成していないので、web上で「CTRL+F」で検索してください。</p>
     <a href="#pageone">戻る</a>
   </div>
 
