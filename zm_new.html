@@ -17,11 +17,13 @@
 <!--<meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport"/> -->
 <title >Syuumuの紹介ページ</title>
 <style>
-a.tab
+/*
+.tab
 {
 	border-color:#3CF;
-	/*background-color:#FC9;*/
+	background-color:#FC9;
 }
+*/
 /*
 #btn-twitter.ui-icon-twitter
 {
@@ -47,18 +49,17 @@ a.tab
 		background-size:18px 18px;
 	}
 }
-#btn-facebook.ui-icon-facebook
+#btn-facebook.ui-icon-facebook:after
 {
-	background:url(images/square-facebook-512.png) no-repeat;
-	background-size:25px 25px;
-	background-color:rgba(255,255,255,.3);
-	margin-left: 18px;
-	margin-top: 18px;
+	background:url(images/square-facebook-512.png) no-repeat 0 0;
+	background-size:18px 18px;
+	border-radius:0;
 }
-#btn-twitter.ui-icon-twitter
+#btn-twitter.ui-icon-twitter:after
 {
 	background:url(images/twitter_circle_color-512.png) no-repeat;
-	background-size:30px 30px;
+	background-size:18px 18px;
+	border-radius:0;
 }
 /*
 #btn-facebook.ui-icon-facebook
@@ -101,11 +102,21 @@ a.tab
   	<div data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
         <a href="#" data-role="button" style="border-color:#3CF; background-color:transparent; font-family:Verdana, Geneva, sans-serif;">menu
         </a>
-        <a href="#self_intro" data-role="button"  class="tab">商品紹介
+        <a href="#self_intro" data-role="button"  class="tab" style="border-color:#3CF;background-color:#FC9;">商品紹介
         </a>
-        <a href="#photos" data-role="button" class="tab">商品写真
+        <a href="#photos" data-role="button" class="tab" style="border-color:#3CF;background-color:#FC9;">商品写真
         </a>
-        <a href="#comment" data-role="button" class="tab">商品コメント
+        <a href="#comment" data-role="button" class="tab" style="border-color:#3CF;background-color:#FC9;">商品コメント
+        </a>
+    </div>
+    <div data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
+        <a href="#" data-role="button" style="border-color:#3CF; background-color:transparent; font-family:Verdana, Geneva, sans-serif;">menu
+        </a>
+        <a href="#self_intro" data-role="button"  class="tab" style="border-color:#3CF;background-color:#FC9;">商品紹介
+        </a>
+        <a href="#photos" data-role="button" class="tab" style="border-color:#3CF;background-color:#FC9;">商品写真
+        </a>
+        <a href="#comment" data-role="button" class="tab" style="border-color:#3CF;background-color:#FC9;">商品コメント
         </a>
     </div>
     <!--
@@ -130,7 +141,7 @@ a.tab
         </font>
         </p>
         </a>
-        <p>&nbsp;&nbsp;私は明確な目標を立て、最後まで諦めない人です。大学時代、日本語を専攻としてゼロから一生懸命勉強してきました。しかし、自分の将来に少しでも役に立つ専攻以外の知識も学びたいです。三年生に入ってから、私は余暇を利用して三ヶ月以内中国会計従業資格証(日商簿記と類似)を目指し独学しました。その時、日本語能力1級試験と会計従業試験の受験日が近くて、みんなは日本語能力試験のために勉強していました。友達から「時間がなくて大変ですね、諦めたほうがいい」と言われても、諦めたくないです。両方の勉強を両立させるために、毎日の時間を合理的に配置し一生懸命勉強しました。やっと二つの試験は一回で合格しました。
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;私は明確な目標を立て、最後まで諦めない人です。大学時代、日本語を専攻としてゼロから一生懸命勉強してきました。しかし、自分の将来に少しでも役に立つ専攻以外の知識も学びたいです。三年生に入ってから、私は余暇を利用して三ヶ月以内中国会計従業資格証(日商簿記と類似)を目指し独学しました。その時、日本語能力1級試験と会計従業試験の受験日が近くて、みんなは日本語能力試験のために勉強していました。友達から「時間がなくて大変ですね、諦めたほうがいい」と言われても、諦めたくないです。両方の勉強を両立させるために、毎日の時間を合理的に配置し一生懸命勉強しました。やっと二つの試験は一回で合格しました。
         </p>
      </div>
      	
@@ -160,12 +171,17 @@ a.tab
         </font>
         </p>
         </a>
+        <div>
+        
+        </div>
      </div>
   </div>
 
-  <div data-role="footer" data-fullscreen="true" data-position="fixed">
-  	<a href="#" data-role="button" id="btn-twitter" data-icon="twitter" data-inline="true" style="width:30%;" >Twitter</a>   
-    <a href="#" data-role="button" id="btn-facebook" data-icon="facebook" data-inline="true" style="width:30%;">Facebook</a>
+  <div data-role="footer" data-position="fixed" data-type="horizontal">
+  	<a href="https://twitter.com/" data-role="button" id="btn-twitter" data-icon="twitter"  style="width:25%;" >Twitter
+    </a>   
+    <a href="https://www.facebook.com/" data-role="button" id="btn-facebook" data-icon="facebook"  style="width:25%;">Facebook
+    </a>
   </div>
 </div> 
 
@@ -194,7 +210,7 @@ a.tab
     <a href="#pageone">戻る</a>
   </div>
 
-  <div data-role="footer" data-theme="c" data-position="fixed" data-fullscreen="true">
+  <div data-role="footer" data-fullscreen="true" data-theme="c" data-position="fixed" data-fullscreen="true">
   <h1>申し訳ございません</h1>
  </div>
   </div>
