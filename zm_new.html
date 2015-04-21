@@ -17,13 +17,13 @@
 <!--<meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport"/> -->
 <title >Syuumuの紹介ページ</title>
 <style>
-
+/*
 .tab
 {
 	border-color:#3CF;
 	background-color:#FC9;
 }
-
+*/
 /*
 #btn-twitter.ui-icon-twitter
 {
@@ -63,6 +63,10 @@
 	background:url(images/twitter_circle_color-512.png) no-repeat 0 0;
 	background-size:18px 18px;
 	border-radius:0;
+}
+
+.collapse_header .ui-btn-text{
+    font-size: 10px
 }
 /*
 #btn-facebook.ui-icon-facebook
@@ -105,11 +109,11 @@
   	<div data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
         <a href="#" data-role="button" style="border-color:#3CF; background-color:transparent; font-family:Verdana, Geneva, sans-serif;">menu
         </a>
-        <a href="#self_intro" data-role="button"  class="tab" style="border-color:#3CF;background-color:#BC926B;">商品紹介
+        <a href="#self_intro" data-role="button"  class="tab" style="border-color:#3CF;background-color:#C7AD92;">商品紹介
         </a>
-        <a href="#photos" data-role="button" class="tab" style="border-color:#3CF;background-color:#BC926B;">商品写真
+        <a href="#photos" data-role="button" class="tab" style="border-color:#3CF;background-color:#C7AD92;">商品写真
         </a>
-        <a href="#comment" data-role="button" class="tab" style="border-color:#3CF;background-color:#BC926B;">商品コメント
+        <a href="#comment" data-role="button" class="tab" style="border-color:#3CF;background-color:#C7AD92;">商品コメント
         </a>
     </div>
     
@@ -126,24 +130,24 @@
       <p>欢迎！</p>
       <a href="#pagetwo" data-rel="dialog">转到页面二</a>
       -->
-     <div >
+     <div>
      	<a name="self_intro">
-     	<p style="animation:linear; background-color:#D8C9BC; width:30%; ">
-        <font face="cursive,Comic Sans MS" color="#FFFFFF">
+     	<p style="animation:linear; background-color:#D8C9BC; width:40%;">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF" size="5">
         <span style="margin-left:5%;">商品紹介
         </span>
         </font>
         </p>
         </a>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;私は明確な目標を立て、最後まで諦めない人です。大学時代、日本語を専攻としてゼロから一生懸命勉強してきました。しかし、自分の将来に少しでも役に立つ専攻以外の知識も学びたいです。三年生に入ってから、私は余暇を利用して三ヶ月以内中国会計従業資格証(日商簿記と類似)を目指し独学しました。その時、日本語能力1級試験と会計従業試験の受験日が近くて、みんなは日本語能力試験のために勉強していました。友達から「時間がなくて大変ですね、諦めたほうがいい」と言われても、諦めたくないです。両方の勉強を両立させるために、毎日の時間を合理的に配置し一生懸命勉強しました。やっと二つの試験は一回で合格しました。
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;私は明確な目標を立て、最後まで諦めない人です。大学時代、日本語を専攻としてゼロから一生懸命勉強してきました。しかし、自分の将来に少しでも役に立つ専攻以外の知識も学びたいです。三年生に入ってから、私は余暇を利用して三ヶ月以内中国会計従業資格証(日商簿記と類似)を目指し独学しました。その時、日本語能力1級試験と会計従業試験の受験日が近くて、周りのみんなは日本語能力試験のために勉強していました。友達から「時間がなくて大変ですね、諦めたほうがいい」と言われても、諦めたくありませんでした。両方の勉強を両立させるために、毎日の時間を合理的に配置し、メニューを決めて一生懸命勉強しました。やっと二つの試験は一回で合格しました。
         </p>
      </div>
      	
      <div>
      	<a name="photos">
-     	<p style="animation:linear; background-color:#D8C9BC; width:30%; ">
-        <font face="cursive,Comic Sans MS" color="#FFFFFF">
-        <span style="margin-left:5%;">商品写真
+     	<p style="animation:linear; background-color:#D8C9BC; width:40%; ">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF" size="5">
+        <span style="margin-left:5%; margin-top:0.5%; margin-bottom:0.5%;">商品写真
         </span>
         </font>
         </p>
@@ -158,16 +162,58 @@
     	
      <div>
       <a name="comment">
-     	<p style="animation:linear; background-color:#D8C9BC; width:30%; ">
-        <font face="cursive,Comic Sans MS" color="#FFFFFF">
-        <span style="margin-left:5%;">商品コメント
+     	<p style="animation:linear; background-color:#D8C9BC; width:45%; ">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF" size="5">
+        <span style="margin-left:5%; margin-top:0.5%; margin-bottom:0.5%;">商品コメント
         </span>
         </font>
         </p>
         </a>
-        <div>
-        
+        <div data-role="collapsible-set">
+
+		<div data-role="collapsible" data-collapsed="false">
+        <h3 class="collapse_header">父</h3>
+        <p>彼女は誠実、謙遜で信用を重視し、仕事に対して緻密で、責任感を持って真面目な子です。何事でも計画性があり、興味を持っていることに情熱があります。学習能力も新しい物事や環境を受け入れる能力も強いです。</p>
         </div>
+        
+        <div data-role="collapsible">
+        <h3>孫雅琳(研究室の先輩)</h3>
+        <p>化粧品やファッションに敏感です。いろいろアドバイスしてくれます。いつも笑顔で優しい人です。向上心があり、一度決まったことは、最後までかんばってやり抜く人です。 
+        </p>
+        </div>
+        
+        <div data-role="collapsible">
+        <h3>王騰(大学時代の友達)</h3>
+        <p>周さんは明るくて優しい友達です。大学時代、いつも元気いっぱいでした。学習態度は真面目、チームワークという精神に富み、潜在能力が高いと思います。また、困難に直面でき、やり始めることは最後まで頑張り、責任感、向上心も強い人間だと思います。 </p>
+        </div>
+        <div data-role="collapsible">
+        <h3>呉奉賢(10年以上の友達)</h3>
+        <p>周さんは友達と真心で付き合います。明らかな性格があり、コミュニケーション能力も良好で、いつも積極的な態度をもって物事を扱います。また、時間に観念が強く、向上心も強い。彼女は心を通わす友達です。さらに一生の友達です。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>李カンハ(研究室の友達)</h3>
+        <p>周さんはとても真面目な人で、責任感も強いです。アルバイト先が一緒でとても感心していますのは、どんなことを任せても素早く慣れられる人です。それに、彼女は数字敏感で、数字を覚える能力が抜群だと思います。何よりも、周さんはファッションに興味深くて、今まで、何回も周さんからアドバイスをもらい、とても役にたったと思います。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>刁秀秀(10年ぐらいの友達)</h3>
+        <p>彼女は頭がいいし、明るく優しく、熱心で辛抱強い人だと思います。学習能力が強い。また、私は悩んだことがあったら、いつも周さんに相談し、聞き上手な人だと思います。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>朱錦(中学校からの友達)</h3>
+        <p>周さんは正直に人と付き合い、素直な人です。交際が広いです。何事でも決まったら、力を尽くしてやりぬきます。勤勉で、責任感がある彼女はきっと素晴らしい仕事仲間だと思います。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>曾冰(大学時代の友達)</h3>
+        <p>非常に付き合いやすく、楽観的な人です。ずっと語学の勉強に熱中していたので、成績はかなり優秀です。粘り強い人とも言えます。なんでもやり始めると、他人に負けたくない性格だと考えられます。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>于潔(研究室の友達)</h3>
+        <p>最初、周さんと出会った時は広島大学で日本語研修の頃でした。真っ赤なコートでおしゃれな人だなあと思いました。接触してみれば、結構ファッションや美容に関して自分のこだわりを持つ人で、よくアドバイスをくれました。就職活動もお互いに励ましていて、私のことを優しく聞いてくれました。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>呉華艶(研究室の友達)</h3>
+        <p>周さんは性格がさっぱりしていて、自分の意見をちゃんと言えると思います。また、日頃のファッションセンスにも優れていて、自分らしいスタイルを持ち、見るたびにかわいいと思います。</p>
+		</div>
      </div>
   </div>
 
