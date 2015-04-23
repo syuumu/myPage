@@ -24,9 +24,7 @@
 	background-color:#D8C9BC;
 }
 
-.ui-grid-a{
-    width: 100%;
-}
+
 /*
 .tab .ui-btn:after
 {
@@ -143,21 +141,30 @@
           </ul>
        </div>
   </div>
-
+	
   <div data-role="content" data-type="vertical">
   
   	<div data-role="controlgroup" data-type="horizontal" class="ui-grid-a" align="center">
-        <a href="#" data-role="button" style="border-color:#3CF; background-color:transparent; font-family:Verdana, Geneva, sans-serif;  float:left;margin:0px;padding:0px; font-size:0.8em;">menu
+        <a href="#" data-role="button" style="border-color:#3CF; background-color:transparent; font-family:Verdana, Geneva, sans-serif;  float:left; font-size:0.8em;">menu
         </a>
-        <a href="#self_intro" data-role="button"  class="tab ui-btn ui-btn-text" style="border-color:#3CF;background-color:#D8C9BC;float:left;margin:0px;padding:0px;  font-size:0.8em;" data-ajax="false">商品紹介
+        <a href="#self_intro" data-role="button"  class="tab ui-btn ui-btn-text" style="border-color:#3CF;background-color:#D8C9BC;float:left; font-size:0.8em;" data-ajax="false">商品紹介
         </a>
-        <a href="#photos" data-role="button" class="tab" style="border-color:#3CF;background-color:#D8C9BC; float:left;margin:0px;padding:0px;  font-size:0.8em;" data-ajax="false">商品写真
+        <a href="#photos" data-role="button" class="tab" style="border-color:#3CF;background-color:#D8C9BC; font-size:0.8em;" data-ajax="false">商品写真
         </a>
+        <!--
         <a href="#comment" data-role="button" class="tab" style="border-color:#3CF;background-color:#D8C9BC; float:left;margin:0px;padding:0px;  font-size:0.8em;" data-ajax="false">商品コメント
         </a>
+        <a href="#comment" data-role="button" class="tab" style="border-color:#3CF;background-color:#D8C9BC; float:left;margin:0px;padding:0px;  font-size:0.8em;" data-ajax="false">特技・趣味
+        </a>
+        -->
     </div>
-    
-    
+    <div data-role="controlgroup" data-type="horizontal"  align="center">
+    	<a href="#hobby" data-role="button" class="tab" style="border-color:#3CF;background-color:#D8C9BC;  font-size:0.8em;" data-ajax="false">特技・趣味
+        </a>
+    	<a href="#comment" data-role="button" class="tab" style="border-color:#3CF;background-color:#D8C9BC; float:left;font-size:0.8em;" data-ajax="false">商品コメント
+        </a>
+        
+    </div>
     <!--
     <div data-type="horizontal" align="center">
     
@@ -227,7 +234,33 @@
         <p>
         </p>
      </div>
-    	
+    
+    <div>
+     	<a name="hobby"></a>
+        <!--
+     	<p style="animation:linear; background-color:#D8C9BC; width:45%; ">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF" size="5">
+        <span style="margin-left:5%; margin-top:0.5%; margin-bottom:0.5%;">商品写真
+        </span>
+        </font>
+        </p>
+        -->
+         <p>
+        <img src="images/goods_hobby.jpg" style="width:60%;height:40px;"/>
+        </p>
+        <br />
+        <ul data-role="listview" >
+        	<li data-role="list-divider">趣味</li>
+            <li>語学の勉強</li>
+            <li>旅行(日本に来て以来、日本全国を旅行するのが目標です)</li>
+            <li>音楽(歌える歌曲は400曲以上)</li>
+            <li data-role="list-divider">特技</li>
+            <li>中華料理です。ひとり暮らしが長いため、いつも自分で料理を作ります。</li>
+        </ul>
+     </div>
+     
+     <br />
+     
      <div>
       <a name="comment"></a>
       <!--
