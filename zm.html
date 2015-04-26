@@ -1,42 +1,477 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!--
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+-->
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Syuumuの紹介ページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/> 
+<!--<meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport"/> -->
+<title >Syuumuの紹介ページ</title>
+<style>
+
+.tab
+{
+	border-color:#3CF;
+	background-color:#D8C9BC;
+}
+
+
+/*
+.tab .ui-btn:after
+{
+	width: 25%;
+	padding: 0;
+	text-align: center;
+	font-size: 12px;
+	position: relative;
+	z-index: 1;
+}
+
+.tab .ui-btn-text:after
+{
+	font-size:0.5em;
+}
+*/
+
+/*
+#btn-twitter.ui-icon-twitter
+{
+	background:url(images/twitter_circle_color-512.png) no-repeat 0 0;
+	background-size:30px 30px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.ui-icon-myapp-email {
+		background-image: url("app-icon-email-highres.png");
+		background-size: 18px 18px;
+	}
+	
+	#btn-facebook.ui-icon-facebook
+	{
+		background:url(images/square-facebook-512.png);
+		background-size:18px 18px;
+		margin-left: 18px;
+	}
+	#btn-twitter.ui-icon-twitter
+	{
+		background:url(images/twitter_circle_color-512.png);
+		background-size:18px 18px;
+	}
+}
+*/
+#btn-facebook.ui-icon-facebook:after
+{
+	/*background-image:url(images/square-facebook-512.png);*/
+	background:url(images/square-facebook-512.png) no-repeat 0 0;
+	background-size:18px 18px;
+	border-radius:0;
+}
+#btn-twitter.ui-icon-twitter:after
+{
+	/*background-image:url(images/twitter_circle_color-512.png);*/
+	background:url(images/twitter_circle_color-512.png) no-repeat 0 0;
+	background-size:18px 18px;
+	border-radius:0;
+}
+
+.collapse_header .ui-btn-text{
+    font-size: 10px
+}
+
+/*
+.ui-li .ui-btn-text .ui-link-inherit { 
+    white-space: normal;                
+}
+
+.ui-li-static .ui-body-inherit
+{
+	white-space: normal !important;
+}
+*/
+/*
+.ui-controlgroup-horizontal .ui-controlgroup-controls 
+{ 
+	display: block !important; 
+}
+*/
+/*
+#btn-facebook.ui-icon-facebook
+{
+	background:url(images/square-facebook-512.png) no-repeat 0 0;
+	background-size:20px 20px;
+	margin-left: 18px;
+}
+*/
+
+</style>
 </head>
 
-<body background="images/PageBackGround.jpg" >
-<h2><em><strong>
-<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="400" height="325">
-  <param name="flash_component" value="ImageViewer.swc" />
-  <param name="movie" value="images/photo.swf" />
-  <param name="quality" value="high" />
-  <param name="FlashVars" value="flashlet={imageLinkTarget:'_blank',captionFont:'Verdana',titleFont:'Verdana',showControls:false,frameShow:false,slideDelay:5,captionSize:10,captionColor:#333333,titleSize:10,transitionsType:'Random',titleColor:#333333,slideAutoPlay:true,imageURLs:['images/2011021223250525.jpg','images/FileDownloadIMG.jpeg'],slideLoop:true,frameThickness:2,imageLinks:['http://macromedia.com/','http://macromedia.com/','http://macromedia.com/'],frameColor:#333333,bgColor:#FFFFFF,imageCaptions:[]}" />
-  <embed src="images/photo.swf" quality="high" flashvars="flashlet={imageLinkTarget:'_blank',captionFont:'Verdana',titleFont:'Verdana',showControls:false,frameShow:false,slideDelay:5,captionSize:10,captionColor:#333333,titleSize:10,transitionsType:'Random',titleColor:#333333,slideAutoPlay:true,imageURLs:['images/2011021223250525.jpg','images/FileDownloadIMG.jpeg'],slideLoop:true,frameThickness:2,imageLinks:['http://macromedia.com/','http://macromedia.com/','http://macromedia.com/'],frameColor:#333333,bgColor:#FFFFFF,imageCaptions:[]}" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="400" height="325"> </embed>
-</object>
-周梦</strong></em></h2>
-<table width="200" border="1">
-  <tr>
-    <th scope="row">khih</th>
-    <td>zhu</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">uhiu</th>
-    <td>lv</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">hihi</th>
-    <td>gou</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<!--
-<p class="ttl_fs"><img alt="IEDIT" width="63" height="25" src="QQ图片20140525163159.jpg" />
-<span>今月の人気雑貨をどーんと20位まで発表☆　春のスタートにおすすめの商品は・・・</span>
-</p> 
-</div><div class="section_fs brand_fs"><div class="inside_fs"><p class="ttl_fs"><img alt="IEDIT" width="63" height="25" src="QQ图片20140525163159.jpg" /></p> <p class="img_fs"><a title="初回お試しキャンペーン" ><img alt="初回お試しキャンペーン" width="439" height="200" src="QQ图片20140525163159.jpg" /></a></p> <p class="txt_fs"><span>新アイテム追加！使える春夏アイテムをお得買いできるキャンペーン中！お見逃しなく♪</span></p> </div>
+<body  >
+<div data-role="page" data-theme="a" id="pageone">
+  <div data-role="header" data-theme="a" data-position="inline">
+  	<p style="font-size:1.0em; width:100%; " align="center">周夢の紹介ページ</p>
+ 	 <!--<a href="#" data-role="button" data-rel="back" data-icon="arrow-l">戻る</a>-->
+      <div data-role="navbar" data-type="horizontal">
+          <ul>
+              <li style="width:60%;">
+              <a href="http://www.felissimo.co.jp/" data-transition="fade" >
+              <font face="cursive,Comic Sans MS">FELISSIMO SHOPPING
+              </font>
+              </a>
+              </li>
+              <li style="width:20%;">
+              <a href="#buy" data-rel="dialog">注文
+              </a>
+              </li>
+              <li style="width:18.5%;">
+              <a href="#search" data-rel="dialog">検索
+              </a>
+              </li>
+          </ul>
+       </div>
+  </div>
+	
+  <div data-role="content" data-type="vertical">
+  
+  	<div data-role="controlgroup" data-type="horizontal" class="ui-grid-a" align="center">
+        <a href="#" data-role="button" style="border-color:#3CF; background-color:transparent; font-family:Verdana, Geneva, sans-serif;  float:left; font-size:0.8em;">menu
+        </a>
+        <a href="#self_intro" data-role="button"  class="tab ui-btn ui-btn-text" style="border-color:#3CF;background-color:#F0E8C4;float:left; font-size:0.8em;" data-ajax="false">商品紹介
+        </a>
+        <a href="#photos" data-role="button" class="tab" style="border-color:#3CF;background-color:#F0E8C4; font-size:0.8em;" data-ajax="false">商品写真
+        </a>
+       
+        <!--
+        <a href="#comment" data-role="button" class="tab" style="border-color:#3CF;background-color:#D8C9BC; float:left;margin:0px;padding:0px;  font-size:0.8em;" data-ajax="false">商品コメント
+        </a>
+        <a href="#comment" data-role="button" class="tab" style="border-color:#3CF;background-color:#D8C9BC; float:left;margin:0px;padding:0px;  font-size:0.8em;" data-ajax="false">特技・趣味
+        </a>
+        -->
+    </div>
+    <div data-role="controlgroup" data-type="horizontal"  align="center">
+    	<a href="#hobby" data-role="button" class="tab" style="border-color:#3CF;background-color:#F0E8C4;  font-size:0.8em;" data-ajax="false">特技・趣味
+        </a>
+    	<a href="#comment" data-role="button" class="tab" style="border-color:#3CF;background-color:#F0E8C4; float:left;font-size:0.8em;" data-ajax="false">商品コメント
+        </a>
+    </div>
+    <!--
+    <div data-type="horizontal" align="center">
+    
+    <input type="button" class="ui-input-btn" value="menu"   />
+    <a href="#self_intro" data-ajax="false">
+    <input type="button" class="ui-input-btn" value="商品紹介" />
+    </a>
+    <a href="#photos" data-ajax="false">
+    <input type="button" class="ui-input-btn" value="商品写真" />
+    </a>
+    <a href="#comment" data-ajax="false">
+    <input type="button" class="ui-input-btn" value="商品コメント" />
+    </a>
+    </div>
+    
+    <p>&nbsp;
+    
+    </p>
+    -->
+    <!--
+    <div data-role="controlgroup" data-type="horizontal" align="center">
+    <p>水平分组：</p>
+    <a href="#" data-role="button" style="border-color:#6FC; background-color:transparent;">menu</a>
+    <a href="#" data-role="button" style="border-color:#6FC;">紹介</a>
+    <a href="#" data-role="button" style="border-color:#6FC;">写真</a>
+<a href="#" data-role="button" style="border-color:#6FC;">コメント</a>
+</div>
 -->
+    <!--
+      <p>欢迎！</p>
+      <a href="#pagetwo" data-rel="dialog">转到页面二</a>
+      -->
+     <div>
+     	<a name="self_intro" ></a>
+        <!--
+     	<p style="animation:linear; background-color:#D8C9BC; width:45%;">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF" size="5">
+        <span style="margin-left:5%;">商品紹介
+        </span>
+        </font>
+        </p>
+        -->
+        <p>
+        <img src="images/goods_introduction.jpg" style="width:60%;height:40px;"/>
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;私は明確な目標を立て、最後まで諦めない人です。大学時代、日本語を専攻としてゼロから一生懸命勉強してきました。しかし、自分の将来に少しでも役に立つ専攻以外の知識も学びたいです。三年生に入ってから、私は余暇を利用して三ヶ月以内中国会計従業資格証(日商簿記と類似)を目指し独学しました。その時、日本語能力1級試験と会計従業試験の受験日が近くて、周りのみんなは日本語能力試験のために勉強していました。友達から「時間がなくて大変ですね、諦めたほうがいい」と言われても、諦めたくなかったです。両方の勉強を両立させるために、毎日の時間を合理的に配置し、メニューを決めて一生懸命勉強しました。やっと二つの試験は一回で合格しました。
+        </p>
+     </div>
+     	
+     <div>
+     	<a name="photos"></a>
+        <!--
+     	<p style="animation:linear; background-color:#D8C9BC; width:45%; ">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF" size="5">
+        <span style="margin-left:5%; margin-top:0.5%; margin-bottom:0.5%;">商品写真
+        </span>
+        </font>
+        </p>
+        -->
+         <div data-role="popup" id="myPopup1" data-overlay-theme="b">
+          <p>This is my picture!</p> 
+          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/IMG_7859.JPG" style="width:80%;" alt="Skaret View">
+   		 </div>
+    	<div data-role="popup" id="myPopup2" data-overlay-theme="b">
+          <p>This is my picture!</p> 
+          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/IMG_7836.JPG" style="width:80%;" alt="Skaret View">
+   		 </div>
+         
+         <div data-role="popup" id="myPopup3" data-overlay-theme="b">
+          <p>This is my picture!</p> 
+          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/IMG_6634.JPG" style="width:80%;" alt="Skaret View">
+   		 </div>
+         
+         <div data-role="popup" id="myPopup4" data-overlay-theme="b">
+          <p>This is my picture!</p> 
+          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/IMG_6558.JPG" style="width:80%;" alt="Skaret View">
+   		 </div>
+         
+         <div data-role="popup" id="myPopup5" data-overlay-theme="b">
+          <p>This is my picture!</p> 
+          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/IMG_6027.JPG" style="width:80%;" alt="Skaret View">
+   		 </div>
+         
+         <div data-role="popup" id="myPopup6" data-overlay-theme="b">
+          <p>This is my picture!</p> 
+          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/IMG_2989.JPG" style="width:80%;" alt="Skaret View">
+   		 </div>
+         
+         <div data-role="popup" id="myPopup7" data-overlay-theme="b">
+          <p>This is my picture!</p> 
+          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/IMG_2952.JPG" style="width:80%;" alt="Skaret View">
+   		 </div>
+         
+         <div data-role="popup" id="myPopup8" data-overlay-theme="b">
+          <p>This is my picture!</p> 
+          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/IMG_2951.JPG" style="width:80%;" alt="Skaret View">
+   		 </div>
+         
+         <div data-role="popup" id="myPopup9" data-overlay-theme="b">
+          <p>This is my picture!</p> 
+          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/IMG_0750.JPG" style="width:80%;" alt="Skaret View">
+   		 </div>
+         
+         <div data-role="popup" id="myPopup10" data-overlay-theme="b">
+          <p>This is my picture!</p> 
+          <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/IMG_0642.JPG" style="width:80%;" alt="Skaret View">
+   		 </div>
+         
+         <p>
+        <img src="images/goods_photos.jpg" style="width:60%;height:40px;"/>
+        </p>
+        <div align="center">
+        <a href="#myPopup1" data-rel="popup" data-position-to="window">
+        <img src="images/IMG_7859.JPG" style="width:40%;"/>
+        </a>
+        
+        <a href="#myPopup2" data-rel="popup" data-position-to="window">
+        <img src="images/IMG_7836.JPG" style="width:40%;"/>
+        </a>
+        </div>
+        <div align="center">
+        <a href="#myPopup3" data-rel="popup" data-position-to="window">
+        <img src="images/IMG_6634.JPG" style="width:40%;"/>
+        </a>
+        <a href="#myPopup4" data-rel="popup" data-position-to="window">
+        <img src="images/IMG_6558.JPG" style="width:40%;"/>
+        </a>
+        </div>
+        <div align="center">
+        <a href="#myPopup5" data-rel="popup" data-position-to="window">
+        <img src="images/IMG_6027.JPG" style="width:40%;"/>
+        </a>
+        <a href="#myPopup6" data-rel="popup" data-position-to="window">
+        <img src="images/IMG_2989.JPG" style="width:40%;"/>
+        </a>
+        </div>
+        <div align="center">
+        <a href="#myPopup7" data-rel="popup" data-position-to="window">
+        <img src="images/IMG_2952.JPG" style="width:40%;"/>
+        </a>
+        <a href="#myPopup8" data-rel="popup" data-position-to="window">
+        <img src="images/IMG_2951.JPG" style="width:40%;"/>
+        </a>
+        </div>
+        <div align="center">
+        <a href="#myPopup9" data-rel="popup" data-position-to="window">
+        <img src="images/IMG_0750.JPG" style="width:40%;"/>
+        </a>
+        <a href="#myPopup10" data-rel="popup" data-position-to="window">
+        <img src="images/IMG_0642.JPG" style="width:40%;"/>
+        </a>
+        </div>
+       
+     </div>
+    
+    <div>
+     	<a name="hobby"></a>
+        <!--
+     	<p style="animation:linear; background-color:#D8C9BC; width:45%; ">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF" size="5">
+        <span style="margin-left:5%; margin-top:0.5%; margin-bottom:0.5%;">商品写真
+        </span>
+        </font>
+        </p>
+        -->
+         <p>
+        <img src="images/goods_hobby.jpg" style="width:60%;height:40px;"/>
+        </p>
+       
+        <ul data-role="listview" data-inset="true" style="font-size:1em; ">
+        	<li data-role="list-divider" >趣味</li>
+            <li>語学の勉強</li>
+            <li style="white-space: normal;">
+            旅行(日本に来て以来、日本全国を旅行するのが目標です)
+            <!--
+            <p style="font-size:1.0em;">旅行(日本に来て以来、日本全国を旅行するのが
+            </p>
+            <p style="font-size:1.0em;">
+            目標です)
+            </p>
+            -->
+            </li>
+            <li>音楽(歌える歌曲は400曲以上)</li>
+            <li data-role="list-divider">特技</li>
+            <li style="white-space: normal;">中華料理です。ひとり暮らしが長いため、いつも自分で料理を作ります。
+            <!--
+            <p style="font-size:1.0em;">中華料理です。ひとり暮らしが長いため、
+            </p>
+            <p style="font-size:1.0em;">
+            いつも自分で料理を作ります。
+            </p>
+            -->
+            </li>
+        </ul>
+     </div>
+     
+     <div>
+      <a name="comment"></a>
+      <!--
+     	<p style="animation:linear; background-color:#D8C9BC; width:45%; ">
+        <font face="cursive,Comic Sans MS" color="#FFFFFF" size="5">
+        <span style="margin-left:5%; margin-top:0.5%; margin-bottom:0.5%;">商品コメント
+        </span>
+        </font>
+        </p>
+        -->
+         <p>
+        <img src="images/goods_comment.jpg" style="width:60%;height:40px;"/>
+        </p>
+        <div data-role="collapsible-set">
+
+		<div data-role="collapsible" data-collapsed="false">
+        <h3 class="collapse_header">父</h3>
+        <p>彼女は誠実、謙遜で信用を重視し、仕事に対して緻密で、責任感を持って真面目な子です。何事でも計画性があり、興味を持っていることに情熱があります。学習能力も新しい物事や環境を受け入れる能力も強いです。</p>
+        </div>
+        
+        <div data-role="collapsible">
+        <h3>孫雅琳(研究室の先輩)</h3>
+        <p>化粧品やファッションに敏感です。いろいろアドバイスしてくれます。いつも笑顔で優しい人です。向上心があり、一度決まったことは、最後までかんばってやり抜く人です。 
+        </p>
+        </div>
+        
+        <div data-role="collapsible">
+        <h3>王騰(大学時代の友達)</h3>
+        <p>周さんは明るくて優しい友達です。大学時代、いつも元気いっぱいでした。学習態度は真面目、チームワークという精神に富み、潜在能力が高いと思います。また、困難に直面でき、やり始めることは最後まで頑張り、責任感、向上心も強い人間だと思います。 </p>
+        </div>
+        <div data-role="collapsible">
+        <h3>呉奉賢(10年以上の友達)</h3>
+        <p>周さんは友達と真心で付き合います。明らかな性格があり、コミュニケーション能力も良好で、いつも積極的な態度をもって物事を扱います。また、時間に観念が強く、向上心も強い。彼女は心を通わす友達です。さらに一生の友達です。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>李カンハ(研究室の友達)</h3>
+        <p>周さんはとても真面目な人で、責任感も強いです。アルバイト先が一緒でとても感心していますのは、どんなことを任せても素早く慣れられる人です。それに、彼女は数字敏感で、数字を覚える能力が抜群だと思います。何よりも、周さんはファッションに興味深くて、今まで、何回も周さんからアドバイスをもらい、とても役にたったと思います。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>刁秀秀(10年ぐらいの友達)</h3>
+        <p>彼女は頭がいいし、明るく優しく、熱心で辛抱強い人だと思います。学習能力が強い。また、私は悩んだことがあったら、いつも周さんに相談し、聞き上手な人だと思います。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>朱錦(中学校からの友達)</h3>
+        <p>周さんは正直に人と付き合い、素直な人です。交際が広いです。何事でも決まったら、力を尽くしてやりぬきます。勤勉で、責任感がある彼女はきっと素晴らしい仕事仲間だと思います。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>曾冰(大学時代の友達)</h3>
+        <p>非常に付き合いやすく、楽観的な人です。ずっと語学の勉強に熱中していたので、成績はかなり優秀です。粘り強い人とも言えます。なんでもやり始めると、他人に負けたくない性格だと考えられます。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>于潔(研究室の友達)</h3>
+        <p>最初、周さんと出会った時は広島大学で日本語研修の頃でした。真っ赤なコートでおしゃれな人だなあと思いました。接触してみれば、結構ファッションや美容に関して自分のこだわりを持つ人で、よくアドバイスをくれました。就職活動もお互いに励ましていて、私のことを優しく聞いてくれました。</p>
+        </div>
+        <div data-role="collapsible">
+        <h3>呉華艶(研究室の友達)</h3>
+        <p>周さんは性格がさっぱりしていて、自分の意見をちゃんと言えると思います。また、日頃のファッションセンスにも優れていて、自分らしいスタイルを持ち、見るたびにかわいいと思います。</p>
+		</div>
+     </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed" data-type="horizontal" align="center">
+  	<a href="https://twitter.com/" data-role="button" id="btn-twitter" data-icon="twitter"  style="width:25%; background-color:transparent;" >Twitter
+    </a>   
+    <a href="https://www.facebook.com/" data-role="button" id="btn-facebook" data-icon="facebook"  style="width:25%; background-color:transparent;">Facebook
+    </a>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>我是一个对话框！</h1>
+  </div>
+
+  <div data-role="content">
+    <p>对话框与普通页面不同，它显示在当前页面的顶端。它不会横跨整个页面宽度。对话框页眉中的图标 “X” 可关闭对话框。</p>
+    <a href="#pageone">转到页面一</a>
+  </div>
+
+  <div data-role="footer" data-theme="c" data-position="fixed" data-fullscreen="true">
+  <h1>页脚文本</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="buy">
+  <div data-role="header">
+    <h1>注文について</h1>
+  </div>
+
+  <div data-role="content">
+    <p>何も選択されていない状態で、注文できません</p>
+    <a href="#pageone">戻る</a>
+  </div>
+
+  <div data-role="footer" data-fullscreen="true" data-theme="c" data-position="fixed" data-fullscreen="true">
+  <h1>申し訳ございません</h1>
+ </div>
+  </div>
+  
+<div data-role="page" id="search">
+  <div data-role="header">
+    <h1>検索</h1>
+  </div>
+
+  <div data-role="content">
+    <p>機能は完成していないので、web上で「CTRL+F」で検索してください。</p>
+    <a href="#pageone">戻る</a>
+  </div>
+
+  <div data-role="footer" data-theme="b" data-position="fixed" data-fullscreen="true">
+  <h1>申し訳ございません</h1>
+</div>
+</div>
+ 
 </body>
 </html>
